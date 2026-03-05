@@ -23,7 +23,7 @@ export function AboutQuote({ children }: { children?: React.ReactNode }) {
             </h1>
             <div className="space-y-3 md:space-y-4">
               <p className="text-sm md:text-base lg:text-lg xl:text-xl text-white/90 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-open-sans-custom leading-relaxed">
-                Sou engenheiro de software apaixonado por criar produtos digitais bonitos e funcionais. Com experiência em desenvolvimento full-stack, combino design e código para entregar interfaces limpas e profissionais.
+                Sou estudante de Engenharia de Software e desenvolvedor Back-end, apaixonado por construir sistemas robustos e escaláveis. Tenho foco em Java, APIs RESTful e bancos de dados relacionais, sempre buscando escrever código limpo e bem estruturado.
               </p>
               <p className="text-sm md:text-base lg:text-lg xl:text-xl text-white/90 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-open-sans-custom leading-relaxed">
                 Gosto de trabalhar com tecnologias modernas e estou sempre em busca de novos desafios que me permitam crescer e agregar valor a produtos e equipes.
