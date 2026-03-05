@@ -243,7 +243,7 @@ export default function Home() {
                 handle="andryuszolet"
                 status="Online"
                 contactText="Contato"
-                avatarUrl="/avatar.jpg"
+                avatarUrl="/images/avatar.png"
                 showUserInfo
                 enableTilt={true}
                 enableMobileTilt
@@ -257,7 +257,7 @@ export default function Home() {
                 behindGlowColor="hsla(143, 100%, 60%, 0.5)"
                 behindGlowSize="50%"
                 behindGlowEnabled
-                miniAvatarUrl="/avatar.jpg"
+                miniAvatarUrl="/images/avatar.png"
                 innerGradient="linear-gradient(145deg,hsla(143, 40%, 35%, 0.65) 0%,hsla(160, 60%, 50%, 0.3) 100%)"
               />
             </AboutQuote>
