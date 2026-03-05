@@ -359,15 +359,6 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Email
-                  </Label>
-                  <Input
-                    type="email"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
                     Telefone
                   </Label>
                   <Input
