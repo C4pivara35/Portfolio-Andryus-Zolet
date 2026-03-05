@@ -7,6 +7,7 @@ import { BentoPricing } from "@/components/ui/projects-card"
 import { ContactCard } from "@/components/ui/contact-card"
 import { AboutQuote } from "@/components/ui/about-quote"
 import { MailIcon, PhoneIcon, MapPinIcon, LinkedinIcon, GithubIcon } from "lucide-react"
+import { SiInstagram } from "react-icons/si"
 import { cn } from "@/lib/utils"
 import { useEffect, useRef } from "react"
 import SplitText from "@/components/ui/SplitText"
@@ -340,6 +341,12 @@ export default function Home() {
                   label: "GitHub",
                   value: "github.com",
                   href: "https://github.com/C4pivara35",
+                },
+                {
+                  icon: SiInstagram,
+                  label: "Instagram",
+                  value: "@andryus_zolet",
+                  href: "https://www.instagram.com/andryus_zolet",
                 },
               ]}
             />

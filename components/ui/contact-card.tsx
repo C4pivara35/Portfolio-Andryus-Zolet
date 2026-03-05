@@ -1,10 +1,10 @@
 import type React from "react"
 import { cn } from "@/lib/utils"
-import { type LucideIcon, PlusIcon } from "lucide-react"
+import { PlusIcon } from "lucide-react"
 import DotPattern from "@/components/ui/dot-pattern"
 
 type ContactInfoProps = React.ComponentProps<"div"> & {
-  icon: LucideIcon
+  icon: React.ElementType
   label: string
   value: string
   href?: string
