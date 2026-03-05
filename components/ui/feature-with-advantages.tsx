@@ -36,7 +36,7 @@ function Feature() {
               Minhas Habilidades
             </h2>
             <p className="text-lg max-w-xl lg:max-w-xl leading-relaxed tracking-tight text-gray-300 font-open-sans-custom [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)]">
-              Desenvolvedor full-stack focado em criar produtos confiáveis, escaláveis e com ótima experiência de uso.
+              Desenvolvedor Back-end focado em criar sistemas confiáveis, escaláveis e de alta performance.
             </p>
           </div>
 
@@ -62,18 +62,18 @@ function Feature() {
               <div className="flex flex-row gap-6 w-full items-start">
                 <Check className="w-[1.05rem] h-[1.05rem] mt-2 text-white" strokeWidth={3} />
                 <div className="flex flex-col gap-1">
-                  <p className="text-white font-open-sans-custom">React & Next.js</p>
+                  <p className="text-white font-open-sans-custom">Java</p>
                   <p className="text-gray-300 text-sm font-open-sans-custom">
-                    Interfaces orientadas a componentes com renderização no servidor e geração estática.
+                    Desenvolvimento back-end robusto com Spring Boot, APIs REST e arquitetura orientada a objetos.
                   </p>
                 </div>
               </div>
               <div className="flex flex-row gap-6 items-start">
                 <Check className="w-[1.05rem] h-[1.05rem] mt-2 text-white" strokeWidth={3} />
                 <div className="flex flex-col gap-1">
-                  <p className="text-white font-open-sans-custom">TypeScript</p>
+                  <p className="text-white font-open-sans-custom">React</p>
                   <p className="text-gray-300 text-sm font-open-sans-custom">
-                    Tipagem completa em todo o código, do frontend ao backend.
+                    Interfaces orientadas a componentes com gerenciamento de estado e renderização eficiente.
                   </p>
                 </div>
               </div>
@@ -89,27 +89,27 @@ function Feature() {
               <div className="flex flex-row gap-6 w-full items-start">
                 <Check className="w-[1.05rem] h-[1.05rem] mt-2 text-white" strokeWidth={3} />
                 <div className="flex flex-col gap-1">
-                  <p className="text-white font-open-sans-custom">Node.js & REST APIs</p>
+                  <p className="text-white font-open-sans-custom">TypeScript</p>
                   <p className="text-gray-300 text-sm font-open-sans-custom">
-                    Desenvolvimento server-side com Express, criando APIs RESTful robustas.
+                    Tipagem estática completa para código mais seguro e fácil de manter.
                   </p>
                 </div>
               </div>
               <div className="flex flex-row gap-6 items-start">
                 <Check className="w-[1.05rem] h-[1.05rem] mt-2 text-white" strokeWidth={3} />
                 <div className="flex flex-col gap-1">
-                  <p className="text-white font-open-sans-custom">PostgreSQL & Prisma</p>
+                  <p className="text-white font-open-sans-custom">PostgreSQL</p>
                   <p className="text-gray-300 text-sm font-open-sans-custom">
-                    Bancos de dados relacionais com ORM tipado e migrações de schema.
+                    Bancos de dados relacionais com modelagem eficiente, queries otimizadas e migrações de schema.
                   </p>
                 </div>
               </div>
               <div className="flex flex-row gap-6 items-start">
                 <Check className="w-[1.05rem] h-[1.05rem] mt-2 text-white" strokeWidth={3} />
                 <div className="flex flex-col gap-1">
-                  <p className="text-white font-open-sans-custom">Docker & CI/CD</p>
+                  <p className="text-white font-open-sans-custom">Docker</p>
                   <p className="text-gray-300 text-sm font-open-sans-custom">
-                    Deploys conteinerizados e pipelines automatizados para entregas confiáveis.
+                    Conteinerização de aplicações para ambientes padronizados e deploys confiáveis.
                   </p>
                 </div>
               </div>
