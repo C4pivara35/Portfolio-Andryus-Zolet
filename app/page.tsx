@@ -185,9 +185,9 @@ export default function Home() {
               <div className="mb-8 flex justify-center">
                 <TextType
                   text={[
-                    "seja você um designer, desenvolvedor ou apenas curioso...",
-                    "pegue uma ideia, processe e veja ela ganhar vida.",
-                    "vamos construir algo incrível juntos.",
+                    "estudante de engenharia de software & desenvolvedor back-end.",
+                    "construindo sistemas robustos com Java, Spring Boot e PostgreSQL.",
+                    "transformando lógica em soluções reais, uma linha de cada vez.",
                   ]}
                   as="p"
                   className="mx-auto max-w-2xl text-center text-gray-300 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-thin font-open-sans-custom tracking-wide text-xl"
