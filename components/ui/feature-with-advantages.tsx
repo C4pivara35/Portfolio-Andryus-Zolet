@@ -33,10 +33,10 @@ function Feature() {
         <div className="flex gap-4 py-10 flex-col items-start lg:py-0">
           <div className="flex gap-2 flex-col">
             <h2 className="text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-open-sans-custom text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)]">
-              My Skills
+              Minhas Habilidades
             </h2>
             <p className="text-lg max-w-xl lg:max-w-xl leading-relaxed tracking-tight text-gray-300 font-open-sans-custom [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)]">
-              A full-stack developer focused on building reliable, scalable, and beautiful products.
+              Desenvolvedor full-stack focado em criar produtos confiáveis, escaláveis e com ótima experiência de uso.
             </p>
           </div>
 
@@ -64,7 +64,7 @@ function Feature() {
                 <div className="flex flex-col gap-1">
                   <p className="text-white font-open-sans-custom">React & Next.js</p>
                   <p className="text-gray-300 text-sm font-open-sans-custom">
-                    Component-driven UIs with server-side rendering and static generation.
+                    Interfaces orientadas a componentes com renderização no servidor e geração estática.
                   </p>
                 </div>
               </div>
@@ -73,7 +73,7 @@ function Feature() {
                 <div className="flex flex-col gap-1">
                   <p className="text-white font-open-sans-custom">TypeScript</p>
                   <p className="text-gray-300 text-sm font-open-sans-custom">
-                    Full type safety across frontend and backend codebases.
+                    Tipagem completa em todo o código, do frontend ao backend.
                   </p>
                 </div>
               </div>
@@ -82,7 +82,7 @@ function Feature() {
                 <div className="flex flex-col gap-1">
                   <p className="text-white font-open-sans-custom">Tailwind CSS</p>
                   <p className="text-gray-300 text-sm font-open-sans-custom">
-                    Utility-first styling for fast, consistent, and responsive designs.
+                    Estilização utility-first para layouts rápidos, consistentes e responsivos.
                   </p>
                 </div>
               </div>
@@ -91,7 +91,7 @@ function Feature() {
                 <div className="flex flex-col gap-1">
                   <p className="text-white font-open-sans-custom">Node.js & REST APIs</p>
                   <p className="text-gray-300 text-sm font-open-sans-custom">
-                    Server-side development with Express, building robust RESTful services.
+                    Desenvolvimento server-side com Express, criando APIs RESTful robustas.
                   </p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ function Feature() {
                 <div className="flex flex-col gap-1">
                   <p className="text-white font-open-sans-custom">PostgreSQL & Prisma</p>
                   <p className="text-gray-300 text-sm font-open-sans-custom">
-                    Relational databases with type-safe ORM and schema migrations.
+                    Bancos de dados relacionais com ORM tipado e migrações de schema.
                   </p>
                 </div>
               </div>
@@ -109,7 +109,7 @@ function Feature() {
                 <div className="flex flex-col gap-1">
                   <p className="text-white font-open-sans-custom">Docker & CI/CD</p>
                   <p className="text-gray-300 text-sm font-open-sans-custom">
-                    Containerized deployments and automated pipelines for reliable delivery.
+                    Deploys conteinerizados e pipelines automatizados para entregas confiáveis.
                   </p>
                 </div>
               </div>

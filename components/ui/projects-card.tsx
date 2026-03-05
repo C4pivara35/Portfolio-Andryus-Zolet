@@ -12,15 +12,15 @@ const projects = [
   },
   {
     imageSrc: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80&blur=2",
-    altText: "Coming Soon",
-    captionText: "Coming Soon",
+    altText: "Em Breve",
+    captionText: "Em Breve",
     comingSoon: true,
     href: "",
   },
   {
     imageSrc: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80&blur=2",
-    altText: "Coming Soon",
-    captionText: "Coming Soon",
+    altText: "Em Breve",
+    captionText: "Em Breve",
     comingSoon: true,
     href: "",
   },
@@ -48,7 +48,7 @@ export function BentoPricing() {
               project.comingSoon ? (
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 backdrop-blur-sm">
                   <p className="text-white text-lg font-bold tracking-widest uppercase drop-shadow">
-                    Coming Soon
+                    Em Breve
                   </p>
                 </div>
               ) : (

@@ -35,8 +35,8 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "Andryus Zolet - Software Engineer",
-  description: "Portfolio of Andryus Zolet",
+  title: "Andryus Zolet - Engenheiro de Software",
+  description: "Portfólio de Andryus Zolet",
 }
 
 export default function RootLayout({
@@ -45,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={`font-sans ${openSans.variable} ${rubik.variable} ${instrumentSerif.variable}`}>
         <Suspense fallback={null}>
           {children}

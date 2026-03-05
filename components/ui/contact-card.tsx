@@ -19,8 +19,8 @@ type ContactCardProps = React.ComponentProps<"div"> & {
 }
 
 export function ContactCard({
-  title = "Contact With Me",
-  description = "If you have any questions regarding our Services or need help, please fill out the form here. We do our best to respond within 1 business day.",
+  title = "Entre em contato",
+  description = "Se tiver alguma dúvida ou quiser conversar sobre um projeto, preencha o formulário ao lado. Faço o possível para responder em até 1 dia útil.",
   contactInfo,
   className,
   formSectionClassName,

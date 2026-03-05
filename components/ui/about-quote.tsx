@@ -19,16 +19,14 @@ export function AboutQuote({ children }: { children?: React.ReactNode }) {
           {/* Text content */}
           <div className="flex-1 min-w-0">
             <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] mb-4 md:mb-6 font-open-sans-custom">
-              About This Template
+              Sobre Mim
             </h1>
             <div className="space-y-3 md:space-y-4">
               <p className="text-sm md:text-base lg:text-lg xl:text-xl text-white/90 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-open-sans-custom leading-relaxed">
-                We believe building beautiful, functional products should be simple. This template shows how AI and smart
-                prompting make it easy to turn ideas into clean, professional interfaces.
+                Sou engenheiro de software apaixonado por criar produtos digitais bonitos e funcionais. Com experiência em desenvolvimento full-stack, combino design e código para entregar interfaces limpas e profissionais.
               </p>
               <p className="text-sm md:text-base lg:text-lg xl:text-xl text-white/90 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-open-sans-custom leading-relaxed">
-                It's designed to highlight key features, scale with your content, and let your AI-powered product
-                shine—without extra setup or complexity.
+                Gosto de trabalhar com tecnologias modernas e estou sempre em busca de novos desafios que me permitam crescer e agregar valor a produtos e equipes.
               </p>
             </div>
           </div>

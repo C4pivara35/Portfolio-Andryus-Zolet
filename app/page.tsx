@@ -190,9 +190,9 @@ export default function Home() {
               <div className="mb-8 flex justify-center">
                 <TextType
                   text={[
-                    "whether you are a designer, a developer, or just curious...",
-                    "take an idea, prompt it, and watch it come alive.",
-                    "let's build something great together.",
+                    "seja você um designer, desenvolvedor ou apenas curioso...",
+                    "pegue uma ideia, processe e veja ela ganhar vida.",
+                    "vamos construir algo incrível juntos.",
                   ]}
                   as="p"
                   className="mx-auto max-w-2xl text-center text-gray-300 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-thin font-open-sans-custom tracking-wide text-xl"
@@ -237,7 +237,7 @@ export default function Home() {
             {/* Title block — spans full width above both columns */}
             <div className="mb-10">
               <h1 className="text-4xl font-extrabold tracking-tight lg:text-6xl text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] font-open-sans-custom">
-                About Me
+                Sobre Mim
               </h1>
             </div>
 
@@ -247,7 +247,7 @@ export default function Home() {
                 title="Software Engineer"
                 handle="andryuszolet"
                 status="Online"
-                contactText="Contact Me"
+                contactText="Contato"
                 avatarUrl="/images/avatar.svg"
                 showUserInfo
                 enableTilt={true}
@@ -288,11 +288,10 @@ export default function Home() {
           <div className="relative z-10 mx-auto w-full max-w-5xl">
             <div className="mx-auto mb-10 max-w-2xl text-center">
               <h1 className="text-4xl font-extrabold tracking-tight lg:text-6xl text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] font-open-sans-custom">
-                Plans and Pricing
+                Projetos
               </h1>
               <p className="text-gray-300 mt-4 text-sm md:text-base font-open-sans-custom [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)]">
-                Choose the perfect plan for your needs. From individual creators to enterprise teams, we have flexible
-                pricing options to help you succeed.
+                Alguns dos projetos que desenvolvi ao longo da minha jornada como engenheiro de software.
               </p>
             </div>
             <BentoPricing />
@@ -316,23 +315,23 @@ export default function Home() {
 
           <div className="relative z-10 mx-auto w-full max-w-5xl mt-[5vh]">
             <ContactCard
-              title="Get in touch"
-              description="If you have any questions regarding our Services or need help, please fill out the form here. We do our best to respond within 1 business day."
+              title="Entre em contato"
+              description="Se tiver alguma dúvida ou quiser conversar sobre um projeto, preencha o formulário ao lado. Faço o possível para responder em até 1 dia útil."
               contactInfo={[
                 {
                   icon: MailIcon,
-                  label: "Email",
+                  label: "E-mail",
                   value: "contatoandryuszolet@gmail.com",
                   noTruncate: true,
                 },
                 {
                   icon: PhoneIcon,
-                  label: "Phone",
+                  label: "Telefone",
                   value: "+55 41 99796-3268",
                 },
                 {
                   icon: MapPinIcon,
-                  label: "Address",
+                  label: "Endereço",
                   value: "Curitiba, Paraná",
                 },
                 {
@@ -352,7 +351,7 @@ export default function Home() {
               <form action="" className="w-full space-y-4">
                 <div className="flex flex-col gap-2">
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Name
+                    Nome
                   </Label>
                   <Input
                     type="text"
@@ -370,7 +369,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Phone
+                    Telefone
                   </Label>
                   <Input
                     type="tel"
@@ -379,7 +378,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Message
+                    Mensagem
                   </Label>
                   <Textarea className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]" />
                 </div>
@@ -387,7 +386,7 @@ export default function Home() {
                   className="w-full bg-white text-black hover:bg-gray-100 [text-shadow:_0_1px_2px_rgb(0_0_0_/_10%)] font-open-sans-custom"
                   type="button"
                 >
-                  Submit
+                  Enviar
                 </Button>
               </form>
             </ContactCard>

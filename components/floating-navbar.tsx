@@ -23,10 +23,10 @@ export function FloatingNavbar() {
   }
 
   const navLinks = [
-    { id: "skills", label: "Skills" },
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact" },
+    { id: "skills", label: "Habilidades" },
+    { id: "about", label: "Sobre" },
+    { id: "projects", label: "Projetos" },
+    { id: "contact", label: "Contato" },
   ]
 
   return (
