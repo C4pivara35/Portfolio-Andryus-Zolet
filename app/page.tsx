@@ -12,7 +12,8 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { MailIcon, PhoneIcon, MapPinIcon, LinkedinIcon, GithubIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
+import emailjs from "@emailjs/browser"
 import SplitText from "@/components/ui/SplitText"
 import TextType from "@/components/ui/TextType"
 import ProfileCard from "@/components/ProfileCard"
@@ -22,6 +23,30 @@ export default function Home() {
   const projectsSectionRef = useRef<HTMLDivElement>(null)
   const aboutSectionRef = useRef<HTMLDivElement>(null)
   const contactSectionRef = useRef<HTMLDivElement>(null)
+  const formRef = useRef<HTMLFormElement>(null)
+  const [sendStatus, setSendStatus] = useState<"idle" | "sending" | "success" | "error">("idle")
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!formRef.current) return
+    setSendStatus("sending")
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        formRef.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      )
+      .then(() => {
+        setSendStatus("success")
+        formRef.current?.reset()
+        setTimeout(() => setSendStatus("idle"), 5000)
+      })
+      .catch(() => {
+        setSendStatus("error")
+        setTimeout(() => setSendStatus("idle"), 5000)
+      })
+  }
 
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current
@@ -348,13 +373,15 @@ export default function Home() {
                 },
               ]}
             >
-              <form action="" className="w-full space-y-4">
+              <form ref={formRef} onSubmit={handleSubmit} className="w-full space-y-4">
                 <div className="flex flex-col gap-2">
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
                     Nome
                   </Label>
                   <Input
                     type="text"
+                    name="from_name"
+                    required
                     className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
                   />
                 </div>
@@ -364,6 +391,8 @@ export default function Home() {
                   </Label>
                   <Input
                     type="email"
+                    name="from_email"
+                    required
                     className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
                   />
                 </div>
@@ -373,6 +402,7 @@ export default function Home() {
                   </Label>
                   <Input
                     type="tel"
+                    name="phone"
                     className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
                   />
                 </div>
@@ -380,13 +410,28 @@ export default function Home() {
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
                     Mensagem
                   </Label>
-                  <Textarea className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]" />
+                  <Textarea
+                    name="message"
+                    required
+                    className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
+                  />
                 </div>
+                {sendStatus === "success" && (
+                  <p className="text-green-400 text-sm font-open-sans-custom text-center">
+                    ✓ Mensagem enviada com sucesso!
+                  </p>
+                )}
+                {sendStatus === "error" && (
+                  <p className="text-red-400 text-sm font-open-sans-custom text-center">
+                    ✗ Erro ao enviar. Tente novamente.
+                  </p>
+                )}
                 <Button
-                  className="w-full bg-white text-black hover:bg-gray-100 [text-shadow:_0_1px_2px_rgb(0_0_0_/_10%)] font-open-sans-custom"
-                  type="button"
+                  className="w-full bg-white text-black hover:bg-gray-100 [text-shadow:_0_1px_2px_rgb(0_0_0_/_10%)] font-open-sans-custom disabled:opacity-60"
+                  type="submit"
+                  disabled={sendStatus === "sending"}
                 >
-                  Enviar
+                  {sendStatus === "sending" ? "Enviando..." : "Enviar"}
                 </Button>
               </form>
             </ContactCard>
