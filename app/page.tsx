@@ -6,10 +6,6 @@ import { Feature } from "@/components/ui/feature-with-advantages"
 import { BentoPricing } from "@/components/ui/projects-card"
 import { ContactCard } from "@/components/ui/contact-card"
 import { AboutQuote } from "@/components/ui/about-quote"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
 import { MailIcon, PhoneIcon, MapPinIcon, LinkedinIcon, GithubIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useEffect, useRef } from "react"
@@ -315,7 +311,7 @@ export default function Home() {
           <div className="relative z-10 mx-auto w-full max-w-5xl mt-[5vh]">
             <ContactCard
               title="Entre em contato"
-              description="Se tiver alguma dúvida ou quiser conversar sobre um projeto, preencha o formulário ao lado. Faço o possível para responder em até 1 dia útil."
+              description="Se tiver alguma dúvida ou quiser conversar sobre um projeto, entre em contato por um dos canais abaixo. Faço o possível para responder em até 1 dia útil."
               contactInfo={[
                 {
                   icon: MailIcon,
@@ -346,40 +342,7 @@ export default function Home() {
                   href: "https://github.com/C4pivara35",
                 },
               ]}
-            >
-              <form className="w-full space-y-4">
-                <div className="flex flex-col gap-2">
-                  <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Nome
-                  </Label>
-                  <Input
-                    type="text"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Telefone
-                  </Label>
-                  <Input
-                    type="tel"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Mensagem
-                  </Label>
-                  <Textarea className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]" />
-                </div>
-                <Button
-                  className="w-full bg-white text-black hover:bg-gray-100 [text-shadow:_0_1px_2px_rgb(0_0_0_/_10%)] font-open-sans-custom"
-                  type="button"
-                >
-                  Enviar
-                </Button>
-              </form>
-            </ContactCard>
+            />
           </div>
         </section>
       </div>
